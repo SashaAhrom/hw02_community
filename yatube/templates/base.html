@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    {% load static %} <!--need to pass the tests-->
+    {% include 'includes/head_settings.html' %}
+    <title>{% block title %} No title {% endblock %}</title>
+  </head>
+  <body>
+    <header>{% include 'includes/header.html' %}</header>
+    <main>{% block content %} No content {% endblock %}</main>
+    {% block footer %} footer {% endblock %}
+  </body>
+</html>
