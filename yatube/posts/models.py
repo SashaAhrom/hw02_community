@@ -40,6 +40,6 @@ class Post(models.Model):
         return self.text
 
     class Meta:
-        ordering = ['-pub_date']
+        ordering = ('-pub_date')
         verbose_name = 'notes of famous people'
         db_table = 'all post'
